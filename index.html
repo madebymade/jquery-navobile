@@ -9,6 +9,7 @@
             height: 100%;
             font-family: Helvetica, Arial, san-serif;
             font-weight: 300;
+            line-height: 1.2;
         }
 
         a {
@@ -33,7 +34,7 @@
             border-radius: 3px;
             background: #c1c1c1;
             max-width: 450px;
-            margin: 10px;
+            margin: 10px auto;
             padding: 20px;
             text-align: left;
         }
@@ -43,13 +44,16 @@
     <div class="wrapper">
         <p class="box">
             We've moved. So has Navobile.<br>
-            If you aren't redirected please visit <a href="http://madetech.github.io/jquery-navobile/">http://madetech.github.io/jquery-navobile/</a><br><br>
+            If you aren't redirected [in 10 seconds] please visit <a href="http://madetech.github.io/jquery-navobile/">http://madetech.github.io/jquery-navobile/</a><br><br>
 
             - Made
     </div>
 
     <script type="text/javascript">
-
+        var timer = 10 * 1000;
+        setTimeout(function() {
+            window.location = 'http://madetech.github.io/jquery-navobile/';
+        }, timer);
     </script>
 </body>
 </html>
